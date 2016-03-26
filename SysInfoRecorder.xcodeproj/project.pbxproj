@@ -1,0 +1,367 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A5986CC61B02F5F300C222AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5986CC51B02F5F300C222AD /* Foundation.framework */; };
+		A5986CD11B02F5F300C222AD /* SysInfoRecorder.mm in Sources */ = {isa = PBXBuildFile; fileRef = A5986CD01B02F5F300C222AD /* SysInfoRecorder.mm */; };
+		A5986CDF1B031C1E00C222AD /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A5986CDE1B031C1E00C222AD /* libsubstrate.dylib */; };
+		A5986CE11B03203800C222AD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5986CE01B03203800C222AD /* UIKit.framework */; };
+		A5986CE91B03697700C222AD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5986CE81B03697700C222AD /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A5986CC21B02F5F300C222AD /* SysInfoRecorder.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = SysInfoRecorder.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5986CC51B02F5F300C222AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A5986CCA1B02F5F300C222AD /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		A5986CCB1B02F5F300C222AD /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		A5986CCD1B02F5F300C222AD /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		A5986CCE1B02F5F300C222AD /* SysInfoRecorder-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SysInfoRecorder-Prefix.pch"; sourceTree = "<group>"; };
+		A5986CCF1B02F5F300C222AD /* SysInfoRecorder.xm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SysInfoRecorder.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		A5986CD01B02F5F300C222AD /* SysInfoRecorder.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SysInfoRecorder.mm; sourceTree = "<group>"; };
+		A5986CD51B02F5F300C222AD /* SysInfoRecorder.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = SysInfoRecorder.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/SysInfoRecorder.plist; sourceTree = "<group>"; };
+		A5986CDE1B031C1E00C222AD /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = "../../ChargingHelperplus-for-iOS-8/libsubstrate.dylib"; sourceTree = "<group>"; };
+		A5986CE01B03203800C222AD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A5986CE61B0368BF00C222AD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A5986CE81B03697700C222AD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5986CBE1B02F5F300C222AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5986CE91B03697700C222AD /* QuartzCore.framework in Frameworks */,
+				A5986CE11B03203800C222AD /* UIKit.framework in Frameworks */,
+				A5986CDF1B031C1E00C222AD /* libsubstrate.dylib in Frameworks */,
+				A5986CC61B02F5F300C222AD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A5986CB71B02F5F300C222AD = {
+			isa = PBXGroup;
+			children = (
+				A5986CC71B02F5F300C222AD /* SysInfoRecorder */,
+				A5986CC41B02F5F300C222AD /* Frameworks */,
+				A5986CC31B02F5F300C222AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5986CC31B02F5F300C222AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5986CC21B02F5F300C222AD /* SysInfoRecorder.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5986CC41B02F5F300C222AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5986CE81B03697700C222AD /* QuartzCore.framework */,
+				A5986CE61B0368BF00C222AD /* AVFoundation.framework */,
+				A5986CE01B03203800C222AD /* UIKit.framework */,
+				A5986CDE1B031C1E00C222AD /* libsubstrate.dylib */,
+				A5986CC51B02F5F300C222AD /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5986CC71B02F5F300C222AD /* SysInfoRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				A5986CCF1B02F5F300C222AD /* SysInfoRecorder.xm */,
+				A5986CD01B02F5F300C222AD /* SysInfoRecorder.mm */,
+				A5986CC81B02F5F300C222AD /* Package */,
+				A5986CCC1B02F5F300C222AD /* Supporting Files */,
+			);
+			path = SysInfoRecorder;
+			sourceTree = "<group>";
+		};
+		A5986CC81B02F5F300C222AD /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				A5986CC91B02F5F300C222AD /* DEBIAN */,
+				A5986CD21B02F5F300C222AD /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		A5986CC91B02F5F300C222AD /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				A5986CCA1B02F5F300C222AD /* control.txt */,
+				A5986CCB1B02F5F300C222AD /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		A5986CCC1B02F5F300C222AD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5986CCD1B02F5F300C222AD /* PackageVersion.plist */,
+				A5986CCE1B02F5F300C222AD /* SysInfoRecorder-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A5986CD21B02F5F300C222AD /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				A5986CD31B02F5F300C222AD /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		A5986CD31B02F5F300C222AD /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				A5986CD41B02F5F300C222AD /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		A5986CD41B02F5F300C222AD /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				A5986CD51B02F5F300C222AD /* SysInfoRecorder.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A5986CBF1B02F5F300C222AD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A5986CC11B02F5F300C222AD /* SysInfoRecorder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5986CD81B02F5F300C222AD /* Build configuration list for PBXNativeTarget "SysInfoRecorder" */;
+			buildPhases = (
+				A5986CBC1B02F5F300C222AD /* ShellScript */,
+				A5986CBD1B02F5F300C222AD /* Sources */,
+				A5986CBE1B02F5F300C222AD /* Frameworks */,
+				A5986CBF1B02F5F300C222AD /* Headers */,
+				A5986CC01B02F5F300C222AD /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SysInfoRecorder;
+			productName = SysInfoRecorder;
+			productReference = A5986CC21B02F5F300C222AD /* SysInfoRecorder.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5986CB81B02F5F300C222AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				TargetAttributes = {
+					A5986CC11B02F5F300C222AD = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+				};
+			};
+			buildConfigurationList = A5986CBB1B02F5F300C222AD /* Build configuration list for PBXProject "SysInfoRecorder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A5986CB71B02F5F300C222AD;
+			productRefGroup = A5986CC31B02F5F300C222AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5986CC11B02F5F300C222AD /* SysInfoRecorder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A5986CBC1B02F5F300C222AD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		A5986CC01B02F5F300C222AD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5986CBD1B02F5F300C222AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5986CD11B02F5F300C222AD /* SysInfoRecorder.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A5986CD61B02F5F300C222AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		A5986CD71B02F5F300C222AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		A5986CD91B02F5F300C222AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SysInfoRecorder/SysInfoRecorder-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Projects/ChargingHelperplus-for-iOS-8",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 172.30.26.191;
+				iOSOpenDevInstallOnAnyBuild = YES;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		A5986CDA1B02F5F300C222AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SysInfoRecorder/SysInfoRecorder-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Projects/ChargingHelperplus-for-iOS-8",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 172.30.26.191;
+				iOSOpenDevInstallOnAnyBuild = YES;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5986CBB1B02F5F300C222AD /* Build configuration list for PBXProject "SysInfoRecorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5986CD61B02F5F300C222AD /* Debug */,
+				A5986CD71B02F5F300C222AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5986CD81B02F5F300C222AD /* Build configuration list for PBXNativeTarget "SysInfoRecorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5986CD91B02F5F300C222AD /* Debug */,
+				A5986CDA1B02F5F300C222AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5986CB81B02F5F300C222AD /* Project object */;
+}
